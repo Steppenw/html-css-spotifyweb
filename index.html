@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/utilities.css">
   <title>Spotify Web</title>
@@ -20,26 +21,69 @@
       </div>
       <div class="shortcuts">
         <ul>
-          <li>
-            <a id="home" href="#">
-              <img src="img/home.svg" alt="home" /><span class="hidden-xs"> Home</span>
+          <li class="active">
+            <a href="#">
+              <img src="img/home.svg" alt="home" />
+              <span id="home" class="hidden-xs"> Home</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/search.svg" alt="cerca" /><span class="hidden-xs"> Cerca</span>
+              <img src="img/search.svg" alt="cerca" />
+              <span class="hidden-xs"> Cerca</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/libreria.svg" alt="libreria" /><span class="hidden-xs"> La mia libreria</span>
+              <img src="img/libreria.svg" alt="libreria" />
+              <span class="hidden-xs"> La mia libreria</span>
             </a>
           </li>
         </ul>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="add-playlist hidden-xs">
+        <ul>
+          <li>
+            <h5><strong>PLAYLIST</strong></h5>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-plus-square fa-3x v-algn-md" aria-hidden="true"></span>
+              <span><strong>&nbsp;Crea Playlist</strong></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="playlists">
+        <ul class="hidden-xs">
+          <li><a href="#">Playlist 1</a></li>
+          <li><a href="#">Playlist 2</a></li>
+          <li><a href="#">Playlist 3</a></li>
+          <li><a href="#">Playlist 4</a></li>
+          <li><a href="#">Playlist 5</a></li>
+          <li><a href="#">Playlist 6</a></li>
+          <li><a href="#">Playlist 7</a></li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/download.svg" alt="download" />
+              <span class="hidden-xs">&nbsp;Installa app</span>
+            </a>
+          </li>
+          <li>
+            <div class="rule hidden-xs"></div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/profile.svg" alt="cerca" />
+              <span id="user" class="hidden-xs">&nbsp;<strong>John Doe</strong></span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </aside>
     
     <section class="main-content"></section>

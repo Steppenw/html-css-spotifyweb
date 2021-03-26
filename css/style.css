@@ -1,5 +1,5 @@
 /*GENERAL*/
-a {
+a:hover {
   text-decoration: none;
 }
 
@@ -19,7 +19,11 @@ main aside {
 }
 
 aside > * {
-  padding: 0 15px;
+  padding-right: 15px;
+}
+
+aside div.logo {
+  margin: 10px 0 20px 15px;
 }
 
 aside ul {
@@ -28,11 +32,30 @@ aside ul {
   padding-left: 0;
 }
 
-aside ul li {
-  margin: 8px 0;
+aside ul li:not(.active) {
+  margin: 8px 0 8px 15px;
 }
 
-aside div.shortcuts img {
+aside ul li.active {
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: yellowgreen;
+  padding-left: 12px;
+}
+
+#home, #user {
+  color: white;
+}
+
+aside ul li a {
+  color: #494949;
+}
+
+aside ul li a:hover {
+  color: white;
+}
+
+aside img {
   width: 25px;
 }
 
@@ -42,26 +65,29 @@ aside div.shortcuts img {
     width: 250px;
   }
 
+  aside div.logo {
+    margin-top: 20px;
+  }
+  
   aside div.logo img {
     width: 130px;
   }
 
-  a#home {
-    color: white;
-  }
-  
-  aside ul li a:not(#home) {
-    color: #494949;
-  }
-  
-  aside ul li a:not(#home):hover {
-    color: white;
-  }
+}
 
+.playlists {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.rule {
+  border-style: solid;
+  border-color: #494949;;
+  border-width: 0 0 1px;
 }
 
 main section.main-content {
-  
+  flex-grow: 1;
 }
 
 /*TOOLBAR*/
