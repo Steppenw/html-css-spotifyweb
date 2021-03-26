@@ -68,7 +68,7 @@ aside img {
   aside div.logo {
     margin-top: 20px;
   }
-  
+
   aside div.logo img {
     width: 130px;
   }
@@ -86,8 +86,16 @@ aside img {
   border-width: 0 0 1px;
 }
 
+/*SECTION MAIN_CONTENT*/
 main section.main-content {
   flex-grow: 1;
+  overflow: auto;
+  background-color: #141922;
+}
+
+section.main-content .upgrade {
+  height: 80px;
+  background-color: #080b12;
 }
 
 /*TOOLBAR*/
