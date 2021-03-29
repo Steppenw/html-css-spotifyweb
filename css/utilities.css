@@ -2,15 +2,4 @@
   border: 1px solid black;
 }
 
-.flex {
-  display: flex;
-}
 
-.flex-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.v-algn-md {
-  vertical-align: middle;
-}

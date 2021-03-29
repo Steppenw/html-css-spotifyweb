@@ -65,7 +65,7 @@
           <li><a href="#">Playlist 7</a></li>
         </ul>
       </div>
-      <div class="bottom">
+      <div class="account">
         <ul>
           <li>
             <a href="#">
@@ -86,21 +86,189 @@
       </div>
     </aside>
     
-    <section class="main-content flex-col">
+    <section class="main-content">
 
       <div class="upgrade"></div>
+      
       <div></div>
-      <div class="recent flex">
+
+      <div class="wrapper">
+
+        <!-- Recently played -->
         <h4><strong>Recently played</strong></h4>
+        <div class="recent flex">
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img src="img/metal_lifting.jpg" alt="metal" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>Heavy Metal</strong></h5>
+            <span>Subtitle</span>
+          </div>
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img src="img/stranger.jpeg" alt="stranger" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ea?</strong></h5>
+            <span>Subtitle</span>
+          </div>
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img src="img/aquietplace.jpeg" alt="aquietplace" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>A quiet place</strong></h5>
+            <span>Subtitle</span>
+          </div>
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img src="img/split.jpeg" alt="split" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>Split</strong></h5>
+            <span>Subtitle</span>
+          </div>
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img src="img/cure.jpeg" alt="cure" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>A cure for wellnes</strong></h5>
+            <span>Subtitle</span>
+          </div>
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img src="img/sinister.jpeg" alt="sinister" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>Sinister</strong></h5>
+            <span>Subtitle</span>
+          </div>
+        </div>
+        <!-- /Recently played -->
+
+        <!-- Suggerimenti -->
+        <h4><strong>Creato per John Doe</strong></h4>
+        <span><strong>Più ascolti, più accurati saranno i suggerimenti.</strong></span>
+        <div class="tips flex">
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img src="img/radar.jpeg" alt="radar" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>Release Radar</strong></h5>
+          </div>
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img src="img/mixdaily.jpeg" alt="mixdaily" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>Daily Mix 1</strong></h5>
+          </div>
+        </div>
+        <!-- /Suggerimenti -->
+
+        <!-- Artisti più popolari -->
+        <h4><strong>Artisti più popolari</strong></h4>
+        <span><strong>Più ascolti, più accurati saranno i suggerimenti.</strong></span>
+        <div class="trend flex">
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img class="img-circle" src="img/youg.jpeg" alt="youg" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>Lana Del Rey</strong></h5>
+          </div>
+          <div class="content">
+            <div class="cover">
+              <a href="#">
+                <img class="img-circle" src="img/einaudi.jpeg" alt="einaudi" />
+                <span class="fa fa-play-circle-o fa-4x" aria-hidden="true"></span>
+              </a>
+            </div>
+            <h5><strong>Ludovico Einaudi</strong></h5>
+          </div>
+        </div>
+        <!-- /Artisti più popolari -->
+
       </div>
-
-
 
     </section>
 
   </main>
 
-  <div class="toolbar"></div>
+  <div class="toolbar flex">
+
+    <div class="running flex">
+      <img src="img/sinister.jpeg" alt="sinister" />
+      <div class="album">
+        <h5><strong>Sinister</strong></h5>
+        <a class="my-grey" href="#"><span>Brano 1</span></a>
+      </div>
+      <div class="quick clearfix">
+        <a class="my-grey" href="#">
+          <span class="fav blk fa fa-heart-o" aria-hidden="true"></span>
+        </a>
+        <a class="my-grey" href="#">
+          <span class="albm blk fa fa-folder-o" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="flex-col">
+      <div class="controls flex">
+        <a href="#">
+          <span class="fa fa-random" aria-hidden="true"></span>
+        </a>
+        <a href="#">
+          <span class="fa fa-step-backward" aria-hidden="true"></span>
+        </a>
+        <a href="#">
+          <span class="fa fa-play-circle-o fa-2x" aria-hidden="true"></span>
+        </a>
+        <a href="#">
+          <span class="fa fa-step-forward" aria-hidden="true"></span>
+        </a>
+        <a href="#">
+          <span class="fa fa-repeat" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="progrss-bar flex">
+          <span class="fsz-10">00:25</span>
+          <a href="#">
+            <div class="length flex">
+              <div class="performed"></div>
+              <span class="none fa fa-circle" aria-hidden="true"></span>
+            </div>
+          </a>
+          <span class="fsz-10">04:35</span>
+      </div>
+    </div>
+
+    <div>
+      
+    </div>
+
+  </div>
 
 </body>
 </html>
