@@ -121,7 +121,7 @@ aside img {
 
 .rule {
   border-style: solid;
-  border-color: #494949;;
+  border-color: #494949;
   border-width: 0 0 1px;
 }
 
@@ -136,12 +136,29 @@ main section.main-content span {
   color: #494949;
 }
 
+/*MAIN-CONTENT_UPGRADE*/
 section.main-content .upgrade {
   height: 80px;
   background-color: #080b12;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-/*NAV*/
+.upgr {
+  color: white;
+  padding: 8px 24px;
+  border: 1px solid white;
+  border-radius: 24px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.upgr:hover {
+  color: white;
+  font-size: 14px;
+}
+
+/*MAIN-CONTENT_NAV*/
 section.main-content nav ul {
   justify-content: center;
 }
@@ -166,32 +183,41 @@ nav ul li a:hover {
   color: white;
 }
 
+.yllw-rule {
+  width: 40%;
+  margin: auto;
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: 0 0 2px;
+}
+
+/*MAIN-CONTENT_OVERVIEW*/
 @media screen and (min-width: 400px) {
 
-  section.main-content .wrapper {
+  section.main-content .overview {
     padding: 0 20px;
   }
 
 }
 
-.wrapper h4 {
+.overview h4 {
   margin-top: 20px;
 }
 
-section.main-content .wrapper div.flex {
+section.main-content .overview div.flex {
   flex-wrap: wrap;
   margin: 10px 0;
   text-align: center;
 }
 
-.wrapper div.flex > * {
+.overview div.flex > * {
   flex-basis: 50%;
   margin: 10px 0;
 }
 
 @media screen and (min-width: 992px) {
   
-  .wrapper div.flex > * {
+  .overview div.flex > * {
     flex-basis: calc(100% / 4);
   }
 
@@ -199,7 +225,7 @@ section.main-content .wrapper div.flex {
 
 @media screen and (min-width: 1200px) {
   
-  .wrapper div.flex > * {
+  .overview div.flex > * {
     flex-basis: calc(100% / 6);
   }
 
@@ -209,7 +235,7 @@ div.content > div.cover {
   position: relative;
 }
 
-.wrapper div.flex img {
+.overview div.flex img {
   max-width: 150px;
 }
 
@@ -264,16 +290,16 @@ div.content > div.cover img:hover + span {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
-  .quick {
+@media screen and (min-width: 500px) {
+  .quick, .volume > .none {
     display: block;
   }
 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
 
-  .quick .fav, .quick .albm {
+  .quick .fav, .quick .albm, .lst, .tv, .vol {
     float: left;
   }
 
@@ -334,6 +360,14 @@ div.content > div.cover img:hover + span {
 /*TOOLBAR-VOLUME*/
 .toolbar .volume {
   align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  
+  .volume .length.none {
+    display: flex;
+  }
+  
 }
 
 .volume .length {  

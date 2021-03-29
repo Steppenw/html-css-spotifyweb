@@ -88,11 +88,20 @@
     
     <section class="main-content">
 
-      <div class="upgrade"></div>
+      <div class="upgrade flex">
+        <a class="upgr" href="#">
+          <strong>EFFETTUA L'UPGRADE</strong>
+        </a>
+      </div>
       
       <nav>
         <ul class="flex">
-          <li><a href="#"><strong>IN EVIDENZA</strong></a></li>
+          <li>
+            <div>
+              <a href="#"><strong>IN EVIDENZA</strong></a>
+              <div class="yllw-rule"></div>
+            </div>
+          </li>
           <li><a href="#"><strong>PODCAST</strong></a></li>
           <li><a href="#"><strong>CLASSIFICHE</strong></a></li>
           <li><a href="#"><strong>GENERI E MOOD</strong></a></li>
@@ -101,7 +110,7 @@
         </ul>
       </nav>
 
-      <div class="wrapper">
+      <div class="overview">
 
         <!-- Recently played -->
         <h4><strong>Recently played</strong></h4>
@@ -274,17 +283,19 @@
     </div>
 
     <div class="volume flex">
-      <a class="my-grey" href="#">
-        <span class="m-5 fa fa-list" aria-hidden="true"></span>
-      </a>
-      <a class="my-grey" href="#">
-        <span class="m-5 fa fa-television" aria-hidden="true"></span>
-      </a>
-      <a class="my-grey" href="#">
-        <span class="m-5 fa fa-volume-up" aria-hidden="true"></span>
-      </a>
+      <div class="none clearfix">
+        <a class="my-grey" href="#">
+          <span class="lst blk m-5 fa fa-list" aria-hidden="true"></span>
+        </a>
+        <a class="my-grey" href="#">
+          <span class="tv blk m-5 fa fa-television" aria-hidden="true"></span>
+        </a>
+        <a class="my-grey" href="#">
+          <span class="vol blk m-5 fa fa-volume-up" aria-hidden="true"></span>
+        </a>
+      </div>
       <a href="#">
-        <div class="length flex">
+        <div class="length none">
           <div class="performed"></div>
           <span class="none fa fa-circle" aria-hidden="true"></span>
         </div>
