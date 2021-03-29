@@ -24,6 +24,10 @@
   color: #494949;
 }
 
+.m-5 {
+  margin: 5px;
+}
+
 .fsz-10 {
   font-size: 10px;
 }
@@ -45,11 +49,12 @@ main {
   width: 100%;
 }
 
-/*ASIDE*/
+/*MAIN-ASIDE*/
 main aside {
   width: 55px;
   background-color: #000000;
   flex-shrink: 0;
+  overflow: auto;
 }
 
 aside > * {
@@ -136,6 +141,31 @@ section.main-content .upgrade {
   background-color: #080b12;
 }
 
+/*NAV*/
+section.main-content nav ul {
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 20px;
+}
+
+nav ul li a {
+  color: #494949;
+  padding: 20px 0;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
 @media screen and (min-width: 400px) {
 
   section.main-content .wrapper {
@@ -209,8 +239,10 @@ div.content > div.cover img:hover + span {
   background-color: #282828;
   justify-content: space-between;
   padding: 0 15px;
+  align-items: center;
 }
 
+/*TOOLBAR-RUNNING*/
 .toolbar .running {
   align-items: center;
 }
@@ -227,12 +259,16 @@ div.content > div.cover img:hover + span {
   margin: 0;
 }
 
-.running a.my-grey:hover {
+.running a.my-grey:hover,
+.volume a.my-grey:hover {
   color: white;
 }
 
-.running .quick .fav, .running .quick .albm {
-  margin: 5px;
+@media screen and (min-width: 768px) {
+  .quick {
+    display: block;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -243,6 +279,7 @@ div.content > div.cover img:hover + span {
 
 }
 
+/*TOOLBAR-CONTROLS*/
 .toolbar .flex-col {
   flex-grow: 1;
   max-width: 500px;
@@ -253,7 +290,7 @@ div.content > div.cover img:hover + span {
   align-items: center;
   align-self: center;
   width: 200px;
-  margin: 10px 0 5px;
+  margin-bottom: 5px;
 }
 
 .toolbar .controls a {
@@ -268,7 +305,7 @@ div.content > div.cover img:hover + span {
   flex-grow: 1;
 }
 
-.progrss-bar .length {  
+.length {  
   height: 4px;
   background-color: #494949;
   margin: 0 6px;
@@ -276,18 +313,30 @@ div.content > div.cover img:hover + span {
   align-items: center;
 }
 
-.progrss-bar .length .performed {
+.length .performed {
   width: 25%;
   height: 100%;
   background-color: white;
   border-radius: 4px;
 }
 
-.progrss-bar a:hover .performed {
+.progrss-bar a:hover .performed,
+.volume .length:hover .performed {
   background-color: yellowgreen;
 }
 
-.progrss-bar a:hover span.none {
+.progrss-bar a:hover span.none,
+.volume .length:hover span.none {
   display: block;
   color: white;
+}
+
+/*TOOLBAR-VOLUME*/
+.toolbar .volume {
+  align-items: center;
+}
+
+.volume .length {  
+  width: 80px;
+  margin-right: 0;
 }
